@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afd2019b-b050-4046-b4ea-0efb66c08882" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algebra/generic/AlgebraFactory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algebra/generic/Matrix.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algebra/generic/Vector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algebra/real/Matrix.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algebra/real/Vector.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/algebra/generic/NestedMatrixTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/algebra/generic/NestedMatrixTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/algebra/generic/StringMatrixes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/algebra/generic/StringMatrixes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/algebra/real/MatrixTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/algebra/real/MatrixTests.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/algebra/real/VectorTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/algebra/real/VectorTests.kt" afterDir="false" />
-    </list>
+    <list default="true" id="afd2019b-b050-4046-b4ea-0efb66c08882" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,20 +50,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/homes/ak5323/kotlinmatrix_ak5323&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/homes/ak5323/kotlinmatrix_ak5323",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Gradle.VectorTests.vectors added">
     <configuration name="MatrixTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -199,7 +190,7 @@
       <workItem from="1706624236247" duration="3580000" />
       <workItem from="1706628770452" duration="4928000" />
       <workItem from="1706790481564" duration="5421000" />
-      <workItem from="1706797284356" duration="629000" />
+      <workItem from="1706797284356" duration="1916000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,11 @@ class NestedMatrixTests {
     private val innerFactory = AlgebraFactory(Int::plus, Int::times)
 
     private val outerFactory = AlgebraFactory(Matrix<Int>::plus, Matrix<Int>::times)
+    @org.junit.Test
+    fun `makeVector Test`(){
+        val vecTest = innerFactory.makeVector(listOf(0,2))
+        assertEquals(vecTest, Vector(listOf(0,2),Int::plus, Int::times))
+    }
 
     @Test
     fun `add nested matrices`() {

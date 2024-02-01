@@ -5,11 +5,12 @@ import kotlin.test.assertEquals
 
 class StringMatrixes {
 
+
     @Test
     fun `multiply string matrices`() {
         val stringAlgebraFactory = AlgebraFactory<String>(
-            plus = { a, b -> a + "+" + b },
-            times = { a, b -> a + "*" + b },
+            plus = { a, b -> "$a+$b" },
+            times = { a, b -> "$a*$b" },
         )
 
         val m1 = stringAlgebraFactory.makeMatrix(

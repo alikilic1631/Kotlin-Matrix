@@ -31,7 +31,7 @@ data class Matrix<T>(
     }
 
     private fun getColumn(indexCol: Int): Vector<T> {
-        if (indexCol > this.numCols) {
+        if (indexCol >= this.numCols) {
             throw IndexOutOfBoundsException()
         } else {
             return Vector(
@@ -60,6 +60,7 @@ data class Matrix<T>(
         }
     }
 
+    @JvmName("matrix")
     operator fun times(s: T): Matrix<T> {
         return Matrix(this.vecEntries.map { it * s }, addition, multiplication)
     }
@@ -81,9 +82,21 @@ data class Matrix<T>(
         }
     }
 
+    @JvmName("matrices")
     operator fun times(nestedMat: Matrix<Matrix<T>>): Matrix<Matrix<T>> {
-        return
+        if (this.numCols != nestedMat[0, 0].numRows) {
+            throw UnsupportedOperationException()
+        } else {
+            val nestedNew = (0..<nestedMat.numRows).map { i ->
+                (0..<nestedMat.numCols).map { j -> this * nestedMat[i, j] }
+            }
+
+            return makeMatrix(nestedNew,
+                { x, y -> x.plus(y) },
+                { _, y -> times(y) })
+        }
     }
+
 
     override fun toString(): String {
         val builder = StringBuilder()
@@ -106,8 +119,12 @@ data class Matrix<T>(
     }
 }
 
-
-
+fun <T> makeMatrix(
+    lists: List<List<T>>,
+    plus: (T, T) -> T, times: (T, T) -> T
+): Matrix<T> {
+    return Matrix(lists.map { vec -> Vector(vec, plus, times) }, plus, times)
+}
 
 operator fun Any.times(mat: Matrix<Any>): Matrix<Any> =
     Matrix(mat.vecEntries.map { it * this }, mat.addition, mat.multiplication)

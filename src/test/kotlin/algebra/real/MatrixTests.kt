@@ -1,7 +1,6 @@
 package algebra.real
 
-import Matrix
-import times
+
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.fail
@@ -128,7 +127,12 @@ class MatrixTests {
     @Test
     fun `exception - negative row index`() {
         try {
-            Matrix(listOf(Vector(listOf(1.0, 1.0)), Vector(listOf(1.0, 1.0)))).getRow(-1)
+            Matrix(
+                listOf(
+                    Vector(listOf(1.0, 1.0)),
+                    Vector(listOf(1.0, 1.0))
+                )
+            ).getRow(-1)
             fail("IndexOutOfBoundsException was expected.")
         } catch (exception: IndexOutOfBoundsException) {
             // Good: exception was expected.
@@ -138,7 +142,12 @@ class MatrixTests {
     @Test
     fun `exception - negative column index`() {
         try {
-            Matrix(listOf(Vector(listOf(1.0, 1.0)), Vector(listOf(1.0, 1.0)))).getColumn(-1)
+            Matrix(
+                listOf(
+                    Vector(listOf(1.0, 1.0)),
+                    Vector(listOf(1.0, 1.0))
+                )
+            ).getColumn(-1)
             fail("IndexOutOfBoundsException was expected.")
         } catch (exception: IndexOutOfBoundsException) {
             // Good: exception was expected.
@@ -148,7 +157,12 @@ class MatrixTests {
     @Test
     fun `exception - too large column index`() {
         try {
-            Matrix(listOf(Vector(listOf(1.0, 1.0)), Vector(listOf(1.0, 1.0)))).getColumn(2)
+            Matrix(
+                listOf(
+                    Vector(listOf(1.0, 1.0)),
+                    Vector(listOf(1.0, 1.0))
+                )
+            ).getColumn(2)
             fail("IndexOutOfBoundsException was expected.")
         } catch (exception: IndexOutOfBoundsException) {
             // Good: exception was expected.
@@ -157,7 +171,8 @@ class MatrixTests {
 
     @Test
     fun `exception - add matrices with different row counts`() {
-        val m1 = Matrix(listOf(Vector(listOf(1.0, 1.0)), Vector(listOf(1.0, 1.0))))
+        val m1 =
+            Matrix(listOf(Vector(listOf(1.0, 1.0)), Vector(listOf(1.0, 1.0))))
         val m2 = Matrix(listOf(Vector(listOf(1.0, 1.0))))
         try {
             m1 + m2
@@ -169,7 +184,8 @@ class MatrixTests {
 
     @Test
     fun `exception - multiply matrices with incompatible sizes`() {
-        val m1 = Matrix(listOf(Vector(listOf(1.0, 1.0)), Vector(listOf(1.0, 1.0))))
+        val m1 =
+            Matrix(listOf(Vector(listOf(1.0, 1.0)), Vector(listOf(1.0, 1.0))))
         val m2 = Matrix(
             listOf(
                 Vector(listOf(1.0, 1.0, 1.0)),
