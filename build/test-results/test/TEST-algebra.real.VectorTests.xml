@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="algebra.real.VectorTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-01T12:47:20" hostname="ash12.doc.ic.ac.uk" time="0.017">
+  <properties/>
+  <testcase name="vectors added" classname="algebra.real.VectorTests" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
